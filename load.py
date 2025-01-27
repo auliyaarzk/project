@@ -8,7 +8,7 @@ data = pd.read_csv('transformed_data.csv')  # memasukan file CSV yang sudah ditr
 data_dict = data.to_dict(orient='records')
 
 # Koneksi ke MongoDB 
-client = MongoClient('mongodb+srv://auliarizkirumahhorbo:auliya@aul-p.fc96f.mongodb.net/')
+client = MongoClient('mongodb+srv://<username>:<password>aul-p.fc96f.mongodb.net/')
 db = client['literacy_data']  # Nama database
 collection = db['literacy_rates']  # Nama collection
 
